@@ -1,0 +1,17 @@
+Building an RSA Encryption 101
+Henry Seed 2015, 
+Using notes "10 The RSA Cryptosystem" Math120 
+
+01)		Choose two large distinct primes (p) and (q)
+			(i)	 	compute (n):	 n = pq
+			(ii) 	φ(n):		φ(n) = (p - 1)(q - 1)
+
+02)		Choose invertible element (e) that is in the integers up to φ(n). Therefore gcd(e,φ(n)) = 1
+
+03)		Build a public key (n,e)
+
+04)     Release public key
+
+05)		Using the Euclidean Algorithm, compute (d) the inverse of (e)
+			(i)		ed = 1(modφ(n))
+					hence:	d = e^-1(modφ(n))
